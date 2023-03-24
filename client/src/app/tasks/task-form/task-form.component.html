@@ -1,0 +1,20 @@
+<form class="row" [formGroup]="service.taskForm"
+(submit)="onSubmit()" [class.submitted]="submitted">
+
+  <div class="col-12 mb-3">
+    <label class="form-label fw-bold">Name</label>
+    <input class="form-control form-control-lg" placeholder="Task Name" formControlName="name">
+  </div>
+  <div class="col-12 mb-3">
+    <label class="form-label fw-bold">Date</label>
+    <input class="form-control form-control-lg" placeholder="YYYY/MM/DD" formControlName="date">
+  </div>
+  <div class="col-12 mb-3">
+    <label class="form-label fw-bold">Priority Level</label>
+    <input class="form-control form-control-lg" placeholder="High - Normal" formControlName="priority">
+  </div>
+  <div class="col-6 d-grid">
+    <button class="btn btn-lg btn-info fw-bold text-white shadow-sm"  type="submit">Add</button>
+  </div>
+</form>
+
